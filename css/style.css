@@ -1,0 +1,384 @@
+/* nav bar */
+/* .menu-active {
+  background: linear-gradient( to right, #11CEC4, #00A1C6 ) left bottom no-repeat;
+  font-family: "Avenir Light", sans-serif;
+  font-weight: 700;
+  background-size: 100% 3px;
+  border-radius: 1px;
+} */
+
+.nav-link::after{
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  background:  linear-gradient( to right, #11CEC4, #00A1C6 ) left bottom no-repeat;
+  transition: width .3s;
+}
+
+.nav-link:hover::after{
+  width: 100%;
+  transition: width .3s;
+}
+
+.getStarted-email-text-field {
+  font-size: 0.9em;
+  font-weight: 400;
+  border-width: 0px 0px 0px 0px;
+  margin: 0;
+  -webkit-transition-duration: 500ms;
+  -o-transition-duration: 500ms;
+  transition-duration: 500ms;
+}
+
+/* 1st carousel */
+.carousel-item {
+  height: 100vh;
+  min-height: 350px;
+  background: no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#intro .carousel-content {
+  text-align: center;
+}
+
+.carousel-caption.d-none.d-md-block {
+  position: absolute;
+  top: 200px;
+  color: black;
+  font-family: "Avenir Black", sans-serif;
+}
+
+.icon {
+  background: #fff;
+  padding: 15px 15px 15px 20px;
+}
+
+.getStarted-button {
+  color: #fff;
+  font-size: 0.9em;
+  background: linear-gradient(to right, #11CEC4, #00A1C6);
+  border-width: 0px 0px 0px 0px;
+  border-radius: 0px 5px 5px 0px;
+  margin: 0;
+  padding: 15px 25px 15px 25px;
+  -webkit-transition-duration: 100ms;
+  -o-transition-duration: 100ms;
+  transition-duration: 100ms;
+}
+
+/* about */
+/* .container-fluid {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.mb-50 {
+  margin-bottom: 50px;
+} */
+#about h3::before {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 110px;
+  height: 3px;
+  background: linear-gradient(to right, #11CEC4, #00A1C6);
+  bottom: 1px;
+  left: calc(50% - 60px);
+}
+.section-header h3 {
+  font-size: 32px;
+  color: #2D2D2E;
+  text-align: center;
+  font-weight: 700;
+  position: relative;
+  padding-bottom: 15px;
+}
+
+h3 {
+  display: block;
+  font-size: 1.17em;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+}
+
+#about .readMore {
+  color: #fff;
+  font-size: 0.9em;
+  background: linear-gradient(to right, #11CEC4, #00A1C6);
+  border-width: 0px 0px 0px 0px;
+  border-radius: 5px 5px 5px 5px;
+  border: 1px solid rgba(255,255,255,.5);
+  padding: 10px 35px 10px 35px;
+  -webkit-transition-duration: 100ms;
+  -o-transition-duration: 100ms;
+  transition-duration: 100ms;
+  margin-left: 10px;
+}
+
+/* #about .about-col {
+  background: #fff;
+  border-radius: 0 0 4px 4px;
+  margin-bottom: 20px;
+} */
+
+.readmore-btn {
+  color: #fff;
+  font-size: 0.9em;
+  background: linear-gradient(to right, #11CEC4, #00A1C6);
+  border-width: 0px 0px 0px 0px;
+  margin: 0;
+  padding: 15px 25px 15px 25px;
+  -webkit-transition-duration: 100ms;
+  -o-transition-duration: 100ms;
+  transition-duration: 100ms;
+}
+
+.aboutus-img {
+  width: 100%;
+  height: 100%;
+}
+
+a {
+  color: #2D2D2E;
+  transition: 0.3s;
+}
+
+.section2 {
+  visibility: visible;
+  animation-delay: 0.1s;
+  animation-name: fadeInUp;
+}
+
+.p1{
+  margin-top: 50px;
+}
+#about .readMore:hover {
+  color: #1799ff;
+  background: #fff;
+  border: 1px solid #1799ff;
+  font-weight: 500;
+  -webkit-transition-duration: 500ms;
+  -o-transition-duration: 500ms;
+  transition-duration: 500ms;
+}
+#about .readMore {
+  color: #fff;
+  font-size: 0.9em;
+  background: linear-gradient(to right, #11CEC4, #00A1C6);
+  border-width: 0px 0px 0px 0px;
+  border-radius: 5px 5px 5px 5px;
+  border: 1px solid rgba(255,255,255,.5);
+  padding: 10px 35px 10px 35px;
+  -webkit-transition-duration: 100ms;
+  -o-transition-duration: 100ms;
+  transition-duration: 100ms;
+  margin-left: 10px;
+}
+
+/* our mission */
+#mission {
+  background: #fff;
+  background-size: cover;
+  padding: 60px 0 40px 0;
+  margin: 150px 150px;
+}
+#mission h3 {
+  font-size: 33px;
+  color: #2D2D2E;
+  text-align: center;
+  font-weight: 700;
+  position: relative;
+  padding-bottom: 15px;
+}
+#mission h3::before {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 110px;
+  height: 3px;
+  background: linear-gradient(to right, #11CEC4, #00A1C6);
+  bottom: 1px;
+  left: calc(50% - 60px);
+}
+.mb-30 {
+  margin-bottom: 30px;
+}
+.mb-130 {
+  margin-bottom: 130px;
+}
+p {
+  padding: 0;
+  margin: 0 0 30px 0;
+}
+.section-header p {
+  text-align: center;
+  padding-bottom: 30px;
+  line-height: 24px;
+  color: #2D2D2E;
+  font-size: 0.9em;
+}
+
+/* vission */
+#vission h3::before {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 110px;
+  height: 3px;
+  background: linear-gradient(to right, #11CEC4, #00A1C6);
+  bottom: 1px;
+  left: calc(50% - 60px);
+}
+#ourVision .description {
+  font-size: 0.9em;
+  margin-left: 35px;
+  line-height: 24px;
+  margin-bottom: 0;
+}
+
+/* apply */
+/* para sa animation */
+.parallax {
+  background-attachment: fixed;
+  background-repeat: repeat-y;
+  background-position: center center;
+}
+
+.bg-image-2 {
+  /* background: url('pics/night-traffic-on-autobahn.png') no-repeat center fixed; */
+  background: url("../img/opsfam.png") no-repeat center fixed;
+  background-size: 100% auto;
+  background-size: cover;
+}
+/* apply */
+#apply h3 {
+  color: #fff;
+  font-size: 29px;
+  /* font-family: "Montserrat", sans-serif; */
+  font-family: "Avenir Light", sans-serif;
+  font-weight: 500;
+}
+a {
+  color: #2D2D2E;
+  transition: 0.5s;
+}
+#apply .cta-btn {
+  /* font-family: "Montserrat", sans-serif; */
+  font-family: "Avenir Light", sans-serif;
+  font-size: 23px;
+  font-weight: lighter;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 15px 45px;
+  border-radius: 5px;
+  transition: 0.5s;
+  margin-left: 20px;
+  margin-top: 10px;
+  border: 1px solid #fff;
+  color: #fff;
+}
+
+.section {
+  position: relative;
+  padding: 88px 0 67px 0;
+  display: block;
+}
+
+/* what we do */
+#wedo h3::before {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 110px;
+  height: 3px;
+  background: linear-gradient(to right, #11CEC4, #00A1C6);
+  bottom: 1px;
+  left: calc(50% - 60px);
+}
+#wedo img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 70px;
+  width: 70px;
+}
+#wedo .descrip {
+  background: #FFFFFF;
+  border-radius: 5%;
+  padding: 20px 15px 5px 15px;
+  -webkit-transition-duration: 0.2s;
+  -o-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+}
+#wedo .description {
+  text-align: center;
+  font-size: 0.9em;
+}
+#wedo .title {
+  font-weight: 700;
+  font-size: 19px;
+  color: #2D2D2E;
+  text-align: center;
+}
+.mt-20 {
+  margin-top: 20px;
+}
+
+/* para sa arrow up */
+.back-to-top {
+  position: fixed;
+  display: none;
+  background: #11CEC4;
+  color: #fff;
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  line-height: 1;
+  font-size: 16px;
+  right: 70px;
+  bottom: 28px;
+  border-radius: 3px;
+  transition: background 0.5s;
+  z-index: 11;
+}
+.back-to-top i {
+  padding-top: 11px;
+  color: #fff;
+}
+
+/* pictures sa slider */
+.image1{
+  background-image: url("../img/1carousel.jpg");
+}
+
+.image2{
+  background-image: url("../img/2carousel.jpg");
+}
+
+.image3{
+  background-image: url("../img/3carousel.jpg");
+}
+
+/* animation */
+/* .fadeInUp{
+  visibility: visible;
+    animation-duration: 1.4s;
+    animation-name: fadeInUp;
+}
+
+.bounceInUp{
+  visibility: visible;
+  animation-duration: 1.4s;
+  animation-name: bounceInUp;
+} */
