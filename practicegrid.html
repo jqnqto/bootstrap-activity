@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<style>
+.item1 { 
+    grid-area: header; 
+    width: 431.34px;
+    height: 199.31px;
+    overflow: hidden;
+}
+.item2 { 
+    grid-area: menu1;
+    width: 367.78px;
+    height: 399.39px;
+    overflow: hidden;
+}
+.item3 { 
+    grid-area: main; 
+    width: 241.14px;
+    height: 199.31px;
+    overflow: hidden;
+}
+.item4 { 
+    grid-area: right1;
+    width: 205.53px;
+    height: 190.14px;
+    overflow: hidden;
+ }
+.item5 { 
+    grid-area: footer; 
+    overflow: hidden;
+}
+.item6 { grid-area: sample1;overflow: hidden; }
+.item7 { grid-area: sample2;overflow: hidden; }
+.item8 { grid-area: sample3; overflow: hidden;}
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+  'header header menu1 main'
+  'right1 footer menu1 sample3'
+  'sample1 sample1 sample2 sample3';
+  grid-gap: 10px;
+  width: 75%;
+}
+.grid-container img{
+    width: 100%;
+}
+
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+
+
+.image-wrapper {
+  margin: 0 auto;
+  overflow: hidden;
+}
+.img1 {
+  transition: transform 0.3s ease-in-out;
+}
+.image-wrapper:hover img {
+  transform: scale(1.2);
+}
+
+.hover-container {
+  position: relative;
+  /* width: 50%; */
+  /* max-width: 300px; */
+}
+
+.overlay {
+  position: absolute; 
+  bottom: 0; 
+  background: rgba(0, 0, 0, 0.5); /* Black see-through */
+  height: 75px;
+  width: 100%;
+  transition: .5s ease;
+  opacity:0;
+  color: white;
+  padding: 5px;
+  text-align: left;
+}
+
+.hover-container:hover .overlay {
+  opacity: 1;
+}
+
+
+</style>
+<body>
+
+<!-- Photo Grid -->
+<div class="grid-container grid-container--fit">
+    
+    <div class="item1 image-wrapper img1">
+        <div class="hover-container">
+            <img src="img/solutions/solution-1.jpg">
+            <div class="overlay">
+                <h4>Jardine Distribution Inc.</h4>
+                <p>Company Website</p>
+            </div>
+        </div>          
+    </div>
+
+    <div class="item2 image-wrapper img1">
+        <div class="hover-container">
+            <img src="img/solutions/solution-5.jpg">
+            <div class="overlay">
+                <h4>Suites</h4>
+                <p>Mobile Application</p>
+            </div>
+        </div>          
+    </div>
+
+    <div class="item3 image-wrapper img1">
+        <div class="hover-container">
+            <img src="img/solutions/solution-7.jpg">
+            <div class="overlay">
+                <h4>Global Compact Network Singapore</h4>
+                <p>Company Website</p>
+            </div>
+        </div>          
+    </div>
+
+    <div class="item4 image-wrapper img1">
+        <div class="hover-container">
+            <img src="img/solutions/solution-2.jpg">
+            <div class="overlay">
+                <h4>UFS Armstrong</h4>
+                <p>Mobile Application</p>
+            </div>
+        </div>          
+    </div>
+
+    <div class="item5 image-wrapper img1">
+        <div class="hover-container">
+            <img src="img/solutions/solution-3.jpg">
+            <div class="overlay">
+                <h4>Jardine Distribution Inc.</h4>
+                <p>Mobile Application</p>
+            </div>
+        </div>          
+    </div>
+
+    <div class="item6 image-wrapper img1">
+        <div class="hover-container">
+            <img src="img/solutions/solution-4.jpg">
+            <div class="overlay">
+                <h4>UFS Dealer Sales Rep (DSR)</h4>
+                <p>Mobile Application</p>
+            </div>
+        </div>          
+    </div>
+
+    <div class="item7 image-wrapper img1">
+        <div class="hover-container">
+            <img src="img/solutions/solution-6.jpg">
+            <div class="overlay">
+                <h4>Bridgestone</h4>
+                <p>Admin Website</p>
+            </div>
+        </div>          
+    </div>
+
+    <div class="item8 image-wrapper img1">
+        <div class="hover-container">
+            <img src="img/solutions/solution-8.jpg">
+            <div class="overlay">
+                <h4>Lux Hour</h4>
+                <p>Mobile Application</p>
+            </div>
+        </div>          
+    </div>
+</div>
+
+</body>
+
+</html>
