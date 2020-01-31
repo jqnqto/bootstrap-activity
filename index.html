@@ -17,6 +17,7 @@
     <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/media-query.css">
 
     <title>Document</title>
 </head>
@@ -146,8 +147,8 @@
                     <h3>ABOUT US</h3>
                 </header>
 
-                <div class="row about-col" style="height: 500px;">
-                    <div class="col-md-7 wow animatable fadeInUp mTop">
+                <div class="row about-col">
+                    <div class="col-md-6 wow animatable fadeInUp mTop">
                         <div id="about-carousel" class="carousel slide carousel-fade" data-ride="carousel">
                             <ol class="carousel-indicators">
                                 <li data-target="#about-carousel" data-slide-to="0"></li>
@@ -156,7 +157,7 @@
                             </ol>
 
                             <div class="carousel-inner" role="listbox">
-                                <div class="carousel-item active">
+                                <div class="carousel-item active" style="height: 400px;">
                                     <div class="carousel-container">
                                         <div class="content">
                                             <img src="img/carousel2/1.jpg" class="img-fluid aboutus-img" >
@@ -164,7 +165,7 @@
                                     </div>
                                 </div>
 
-                                <div class="carousel-item">
+                                <div class="carousel-item" style="height: 400px;">
                                     <div class="carousel-container">
                                         <div class="content">
                                             <img src="img/carousel2/2.jpg" class="img-fluid aboutus-img">
@@ -172,7 +173,7 @@
                                     </div>
                                 </div>
 
-                                <div class="carousel-item">
+                                <div class="carousel-item" style="height: 400px;">
                                     <div class="carousel-container">
                                         <div class="content">
                                             <img src="img/carousel2/3.jpg" class="img-fluid aboutus-img">
@@ -197,7 +198,7 @@
                         </div>
                     </div>
 
-                    <div class="col-md-5 wow animatable fadeInUp section2 mTop">
+                    <div class="col-md-6 wow animatable fadeInUp mTop">
                         <div>
                             <p class="p1">
                                 In 2008, we set out to make great things and built an organization to foster greatness. 
@@ -272,11 +273,11 @@
                         <center>
                             <h4 class="title mt-20">Store</h4>
                         </center>
-                        <center>
+                        <div class="text-align:center;">
                             <p>
                                 Scaling up businesses by using advanced technologies placing data at the heart of digital strategy.
                             </p>
-                        </center>
+                        </div>
                     </div>
 
                     <div class="col-md-3 wow animatable bounceIn">
@@ -392,8 +393,7 @@
                 </header>
 
                 <!-- Photo Grid -->
-                <div class="grid-container grid-container--fit">
-                    
+                <div class="grid-container"> 
                     <div class="item1 image-wrapper img1">
                         <div class="hover-container">
                             <img src="img/solutions/solution-1.jpg">
@@ -679,6 +679,8 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 <script src="css/OwlCarousel2-2.3.4/docs/assets/owlcarousel/owl.carousel.min.js"></script>
 <script>
+    
+
     $(document).ready(function(){
         $('.owl-carousel').owlCarousel({
             loop: true,
